@@ -37,6 +37,13 @@ module.exports = function(grunt) {
 			}
 		}
 	},
+	usemin:{
+		html: 'build/src/index.html'
+	},
+
+	useminPrepare: {
+	   html: 'build/src/index.html'
+	},
 
 	imagemin: {
 	    dynamic: {                         
@@ -59,7 +66,15 @@ module.exports = function(grunt) {
 
 	watch: {
 		main: {
-			files: ['src/js/**/*.js', 'src/css/**/*.scss'],
+			files: ['src/js/**/*.js'],
+				tasks: ['default'],
+				options: {
+				event: ['added', 'deleted', 'changed']
+			}
+		},
+
+		sass: {
+			files: ['src/css/**/*.scss'],
 				tasks: ['default'],
 				options: {
 				event: ['added', 'deleted', 'changed']
@@ -83,13 +98,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
   
   // Default task(s).
-  grunt.registerTask('default', ['clean', 'copy', 'imagemin', 'sass', 'cssmin', 'uglify']);
+  grunt.registerTask('default', ['clean', 'copy', 'imagemin', 'sass', 'cssmin', 'uglify', 'useminPrepare', 'usemin']);
   grunt.registerTask('sprite', ['sprite']);
 
 };
