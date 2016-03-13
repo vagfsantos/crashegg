@@ -9,11 +9,9 @@ module.exports = function(grunt) {
 	},
 
     copy: {
-      main: {
-        files:{
-        	expand: true, src: ['src/**'], dest: 'build/'
-        }
-      }
+	    files:{
+	    	expand: true, src: ['src/**'], dest: 'build/'
+	    }
     },
 
     uglify: {
@@ -40,21 +38,37 @@ module.exports = function(grunt) {
 		}
 	},
 
-	imagemin: {                          // Task 
-	    dynamic: {                         // Another target 
+	imagemin: {
+	    dynamic: {                         
 	      files: [{
-	        expand: true,                  // Enable dynamic expansion 
-	        cwd: 'src/',                   // Src matches are relative to this path 
-	        src: ['img/**/*.{png,jpg,gif}'],   // Actual patterns to match 
-	        dest: 'build/img/'                  // Destination path prefix 
+	        expand: true,                   
+	        cwd: 'build/src/img/',                  
+	        src: ['**/*.{png,jpg,gif}'],   
+	        dest: '/'                  
 	      }]
 	    }
 	},
+
+	sprite:{
+      all: {
+        src: 'src/img/sprite/*.png',
+        dest: 'build/src/img/sprite/sprite-crash.png',
+        destCss: 'src/css/config/sprite.scss'
+      }
+    },
 
 	watch: {
 		main: {
 			files: ['src/js/**/*.js', 'src/css/**/*.scss'],
 				tasks: ['default'],
+				options: {
+				event: ['added', 'deleted', 'changed']
+			}
+		},
+
+		sprite: {
+			files: ['src/img/sprite/*.png'],
+				tasks: ['sprite'],
 				options: {
 				event: ['added', 'deleted', 'changed']
 			}
@@ -70,10 +84,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
   
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['clean', 'copy', 'imagemin', 'sass', 'cssmin', 'uglify']);
+  grunt.registerTask('sprite', ['sprite']);
 
 };
