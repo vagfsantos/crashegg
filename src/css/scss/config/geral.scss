@@ -1,0 +1,49 @@
+.egg-row{
+	width: 100%;
+	float: left;
+}
+
+.egg-container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.egg-group-title{
+	*{
+		font-family: $fontHighlight;
+	}
+}
+
+// colors
+.egg-dark{
+	color: $color-dark;
+}
+
+.egg-yellow{
+	color: $color-yellow;
+}
+
+.egg-light{
+	color: $color-light;
+}
+
+.egg-gray{
+	color: $color-gray;
+}
+
+// backgrounds
+.egg-bg-dark{
+	background-color: $color-dark;
+}
+
+.egg-bg-yellow{
+	background-color: $color-yellow;
+}
+
+.egg-bg-light{
+	background-color: $color-light;
+}
+
+.egg-bg-gray{
+	background-color: $color-gray;
+}

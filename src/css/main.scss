@@ -1,3 +1,6 @@
-a{
-	display: none;    
-}     
+@import 'scss/vars/vars';
+@import 'scss/vars/mixins';
+
+@import 'scss/config/normalize';
+@import 'scss/config/reset'; 
+@import 'scss/config/geral';
