@@ -1,0 +1,15 @@
+#egg-banner-main{
+	overflow-x: hidden;
+
+	ul{ 
+		li{
+			a{
+				img{
+					margin-left: -1000px;
+					left: 50%;
+					position: relative;
+				}
+			}
+		}
+	}
+}
