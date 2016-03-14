@@ -1,0 +1,50 @@
+#egg-nav{
+	background-color: rgba($color-dark, 1);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+
+	.egg-container{
+		.egg-menu{
+			width: 100%;
+			display: table;
+			ul{
+				width: 100%;
+				display: inline-table;
+				li{
+					width: 15%;
+					text-align: center;
+					display: table-cell;
+					vertical-align: middle;
+					padding: 20px 0;
+
+					&.egg-logo{
+						width: initial;
+
+						a{
+							overflow: hidden;
+							text-indent: -999em;
+							display: inline-block;
+						}
+					}
+					
+					h1{
+						font-size: 14px;
+					}
+					a{
+						color: $color-light;
+						font-size: 14px;
+						text-shadow: 0 0 2px $color-light;
+						@include animation(.2s, ease-out);
+
+						&:hover{
+							color: $color-yellow;
+							text-shadow: 0 0 2px $color-yellow;
+						}
+					}
+				}
+			}
+		}
+	}
+} 
