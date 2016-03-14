@@ -4,3 +4,8 @@
 @import 'scss/config/normalize';
 @import 'scss/config/reset'; 
 @import 'scss/config/geral';
+@import 'sprite.css';
+
+@import 'scss/layout/navbar';
+@import 'scss/layout/banner-main';
+@import 'scss/layout/services';

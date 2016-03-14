@@ -4,6 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(sprite.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -399,5 +400,140 @@ body {
 
 .egg-bg-gray {
   background-color: #E5E5E5; }
+
+#egg-nav {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99; }
+  #egg-nav .egg-container .egg-menu {
+    width: 100%;
+    display: table; }
+    #egg-nav .egg-container .egg-menu ul {
+      width: 100%;
+      display: inline-table; }
+      #egg-nav .egg-container .egg-menu ul li {
+        width: 15%;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px 0; }
+        #egg-nav .egg-container .egg-menu ul li.egg-logo {
+          width: initial; }
+          #egg-nav .egg-container .egg-menu ul li.egg-logo a {
+            overflow: hidden;
+            text-indent: -999em;
+            display: inline-block; }
+        #egg-nav .egg-container .egg-menu ul li h1 {
+          font-size: 14px; }
+        #egg-nav .egg-container .egg-menu ul li a {
+          color: #FFFFFF;
+          font-size: 14px;
+          text-shadow: 0 0 2px #FFFFFF;
+          -webkit-transition: 0.2s ease-out;
+          -moz-transition: 0.2s ease-out;
+          -ms-transition: 0.2s ease-out;
+          -o-transition: 0.2s ease-out;
+          transition: 0.2s ease-out; }
+          #egg-nav .egg-container .egg-menu ul li a:hover {
+            color: #FAC200;
+            text-shadow: 0 0 2px #FAC200; }
+
+#egg-banner-main {
+  overflow-x: hidden; }
+  #egg-banner-main ul li a img {
+    margin-left: -1000px;
+    left: 50%;
+    position: relative; }
+
+#egg-services {
+  padding: 60px 0; }
+  #egg-services .egg-container .egg-group-title {
+    width: 100%;
+    float: left; }
+    #egg-services .egg-container .egg-group-title .egg-title {
+      line-height: 76px;
+      margin-bottom: 20px; }
+      #egg-services .egg-container .egg-group-title .egg-title span {
+        display: block;
+        font-size: 96px;
+        font-weight: 700; }
+    #egg-services .egg-container .egg-group-title .egg-describle {
+      width: 100%;
+      float: left; }
+      #egg-services .egg-container .egg-group-title .egg-describle p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 23; }
+  #egg-services .egg-container .egg-group-services {
+    width: 100%;
+    float: left;
+    margin-top: 30px; }
+    #egg-services .egg-container .egg-group-services ul {
+      width: 100%;
+      float: left; }
+      #egg-services .egg-container .egg-group-services ul li {
+        position: relative;
+        float: left;
+        margin-right: 56px; }
+        #egg-services .egg-container .egg-group-services ul li a {
+          display: block;
+          overflow: hidden;
+          text-indent: -999em; }
+        #egg-services .egg-container .egg-group-services ul li .egg-drop {
+          width: 550px;
+          float: left;
+          padding: 30px;
+          background-color: #000000;
+          position: absolute;
+          left: 0;
+          top: 135px;
+          visibility: hidden;
+          opacity: 0;
+          -webkit-transition: 0.2s ease;
+          -moz-transition: 0.2s ease;
+          -ms-transition: 0.2s ease;
+          -o-transition: 0.2s ease;
+          transition: 0.2s ease; }
+          #egg-services .egg-container .egg-group-services ul li .egg-drop:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 20px solid #000000;
+            position: absolute;
+            left: 28px;
+            top: -20px; }
+          #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure {
+            width: 100%;
+            float: left; }
+            #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure .egg-img {
+              width: 29%;
+              float: left;
+              margin-right: 1%; }
+            #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure figcaption {
+              width: 70%;
+              float: left; }
+              #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure figcaption .egg-describle h3 {
+                font-family: "Georgia", serif;
+                font-weight: 700;
+                font-size: 30px;
+                text-align: left;
+                display: block;
+                margin-bottom: 25px; }
+              #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure figcaption .egg-describle p {
+                text-align: left;
+                display: block;
+                font-size: 14px; }
+        #egg-services .egg-container .egg-group-services ul li:hover .egg-drop {
+          visibility: visible;
+          opacity: 1; }
+        #egg-services .egg-container .egg-group-services ul li:nth-child(4) .egg-drop, #egg-services .egg-container .egg-group-services ul li:nth-child(5) .egg-drop, #egg-services .egg-container .egg-group-services ul li:nth-child(6) .egg-drop {
+          left: initial;
+          right: 0; }
+          #egg-services .egg-container .egg-group-services ul li:nth-child(4) .egg-drop:after, #egg-services .egg-container .egg-group-services ul li:nth-child(5) .egg-drop:after, #egg-services .egg-container .egg-group-services ul li:nth-child(6) .egg-drop:after {
+            left: initial;
+            right: 28px; }
 
 /*# sourceMappingURL=main.css.map */

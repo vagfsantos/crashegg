@@ -1,0 +1,59 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-logo-header {
+  background-image: url(../img/sprite/sprite-crash.png);
+  background-position: -2675px -642px;
+  width: 52px;
+  height: 52px;
+}
+.icon-service-3d {
+  background-image: url(../img/sprite/sprite-crash.png);
+  background-position: -2675px 0px;
+  width: 107px;
+  height: 107px;
+}
+.icon-service-midiaoff {
+  background-image: url(../img/sprite/sprite-crash.png);
+  background-position: -2675px -107px;
+  width: 107px;
+  height: 107px;
+}
+.icon-service-midiaon {
+  background-image: url(../img/sprite/sprite-crash.png);
+  background-position: -2675px -214px;
+  width: 107px;
+  height: 107px;
+}
+.icon-service-video {
+  background-image: url(../img/sprite/sprite-crash.png);
+  background-position: -2675px -321px;
+  width: 107px;
+  height: 107px;
+}
+.icon-service-web {
+  background-image: url(../img/sprite/sprite-crash.png);
+  background-position: -2675px -428px;
+  width: 107px;
+  height: 107px;
+}
+.icon-service-youtube {
+  background-image: url(../img/sprite/sprite-crash.png);
+  background-position: -2675px -535px;
+  width: 107px;
+  height: 107px;
+}
+.icon-sprite-crash {
+  background-image: url(../img/sprite/sprite-crash.png);
+  background-position: 0px 0px;
+  width: 2675px;
+  height: 2675px;
+}
