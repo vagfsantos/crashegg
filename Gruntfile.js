@@ -59,8 +59,8 @@ module.exports = function(grunt) {
 	sprite:{
       all: {
         src: 'src/img/sprite/*.png',
-        dest: 'build/src/img/sprite/sprite-crash.png',
-        destCss: 'src/css/config/sprite.scss'
+        dest: 'src/img/sprite/sprite-crash.png',
+        destCss: 'src/css/sprite.css'
       }
     },
 
@@ -81,9 +81,17 @@ module.exports = function(grunt) {
 			}
 		},
 
-		sprite: {
+		html: {
+			files: ['src/**/*.html'],
+				tasks: ['default'],
+				options: {
+				event: ['added', 'deleted', 'changed']
+			}
+		},
+
+		sprites_watch: {
 			files: ['src/img/sprite/*.png'],
-				tasks: ['sprite'],
+				tasks: ['default'],
 				options: {
 				event: ['added', 'deleted', 'changed']
 			}
@@ -106,6 +114,6 @@ module.exports = function(grunt) {
   
   // Default task(s).
   grunt.registerTask('default', ['clean', 'copy', 'imagemin', 'sass', 'cssmin', 'uglify', 'useminPrepare', 'usemin']);
-  grunt.registerTask('sprite', ['sprite']);
+  grunt.registerTask('mk-sprite', 'sprite');
 
 };
