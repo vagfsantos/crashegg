@@ -1,0 +1,52 @@
+#egg-about{
+	padding: 110px 0;
+
+	.egg-left{
+		width: 40%;
+		float: left;
+
+		.egg-group-title{
+			width: 100%;
+			float: left;
+			
+
+			.egg-title{
+				margin-bottom: 40px;
+				span{
+					display: block;
+					font-size: 76px;
+					font-weight: 700;
+					line-height: 60px;
+				}
+			}
+
+			.egg-describle{
+				padding-right: 20%;
+				p{
+					font-family: $fontMain;
+					font-size: 22px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+	.egg-right{
+		width: 60%;
+		float: left;
+
+		figure{
+			img{
+				max-width: 100%;
+				height: auto;
+				float: right;
+				margin: -40px 0;
+			}
+
+			figcaption{
+				display: none;
+			}
+		}
+	}
+	
+}

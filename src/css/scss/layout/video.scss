@@ -1,0 +1,50 @@
+#egg-video-marketing{
+	position: relative;
+
+	.egg-video-image{
+		overflow: hidden;
+		picture{
+			img{
+				position: relative;
+				left: 50%;
+				margin-left: -1000px;
+				margin-bottom: -5px;
+			}
+		}
+	}
+	
+	.egg-container{
+		.egg-group-video{
+			position: absolute;
+			bottom: 15%;
+
+			.egg-group-icon{
+				width: 100%;
+				float: left;
+				margin-bottom: 15px;
+
+				span{
+					display: block;
+					overflow: hidden;
+					text-indent: -999em;
+					cursor: pointer;
+				}
+			}
+
+			.egg-group-title{
+				width: 100%;
+				float: left;
+
+				.egg-title{
+					span{
+						display: block;
+						font-size: 76px;
+						font-weight: 700;
+						line-height: 60px;
+					}
+				}
+			}
+		}
+	}
+	
+}

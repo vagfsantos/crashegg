@@ -10,50 +10,50 @@ Icon classes can be used entirely standalone. They are named after their origina
 ```
 */
 .icon-logo-header {
-  background-image: url(../img/sprite/sprite-crash.png);
-  background-position: -2675px -642px;
+  background-image: url(../img/sprite-crash.png);
+  background-position: -106px -214px;
   width: 52px;
   height: 52px;
 }
+.icon-logo-video {
+  background-image: url(../img/sprite-crash.png);
+  background-position: 0px -214px;
+  width: 106px;
+  height: 106px;
+}
 .icon-service-3d {
-  background-image: url(../img/sprite/sprite-crash.png);
-  background-position: -2675px 0px;
+  background-image: url(../img/sprite-crash.png);
+  background-position: 0px 0px;
   width: 107px;
   height: 107px;
 }
 .icon-service-midiaoff {
-  background-image: url(../img/sprite/sprite-crash.png);
-  background-position: -2675px -107px;
+  background-image: url(../img/sprite-crash.png);
+  background-position: -107px 0px;
   width: 107px;
   height: 107px;
 }
 .icon-service-midiaon {
-  background-image: url(../img/sprite/sprite-crash.png);
-  background-position: -2675px -214px;
+  background-image: url(../img/sprite-crash.png);
+  background-position: 0px -107px;
   width: 107px;
   height: 107px;
 }
 .icon-service-video {
-  background-image: url(../img/sprite/sprite-crash.png);
-  background-position: -2675px -321px;
+  background-image: url(../img/sprite-crash.png);
+  background-position: -107px -107px;
   width: 107px;
   height: 107px;
 }
 .icon-service-web {
-  background-image: url(../img/sprite/sprite-crash.png);
-  background-position: -2675px -428px;
+  background-image: url(../img/sprite-crash.png);
+  background-position: -214px 0px;
   width: 107px;
   height: 107px;
 }
 .icon-service-youtube {
-  background-image: url(../img/sprite/sprite-crash.png);
-  background-position: -2675px -535px;
+  background-image: url(../img/sprite-crash.png);
+  background-position: -214px -107px;
   width: 107px;
   height: 107px;
-}
-.icon-sprite-crash {
-  background-image: url(../img/sprite/sprite-crash.png);
-  background-position: 0px 0px;
-  width: 2675px;
-  height: 2675px;
 }

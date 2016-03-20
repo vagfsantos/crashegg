@@ -1,0 +1,53 @@
+#egg-porfolio{
+	padding: 110px 0;
+	.egg-group-title{
+		width: 100%;
+		float: left;
+
+		.egg-title{
+			span{
+				display: block;
+				font-size: 76px;
+				font-weight: 700;
+				line-height: 60px;
+			}
+		}
+	}
+
+	.egg-group-portfolio{ 
+		width: 100%;
+		float: left;
+		margin-top: 30px;
+
+		ul{
+			li{
+				width: 33.3%;
+				float: left;
+				padding-right: 5%;
+				margin-top: 35px;
+
+				a{
+					figure{
+						.egg-img{
+							img{
+								max-width: 100%;
+								height: auto;
+								@include animation(.2s, ease-in-out);
+							}
+						}
+
+						figcaption{
+							display: none;
+						}
+					}
+
+					&:hover{
+						img{
+							transform: translateY(-10px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
