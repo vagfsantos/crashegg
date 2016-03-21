@@ -4,6 +4,7 @@
 @import 'scss/config/normalize';
 @import 'scss/config/reset'; 
 @import 'scss/config/geral';
+@import 'scss/config/animate.css';
 @import 'sprite.css';
 
 @import 'scss/layout/navbar';
@@ -12,3 +13,5 @@
 @import 'scss/layout/video';
 @import 'scss/layout/portfolio';
 @import 'scss/layout/about';
+@import 'scss/layout/contact';
+@import 'scss/layout/footer';

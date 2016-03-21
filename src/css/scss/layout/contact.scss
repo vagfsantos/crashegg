@@ -1,0 +1,78 @@
+#egg-contact{
+	padding: 100px 0;
+	
+	.egg-group-title{
+		width: 100%;
+		float: left;
+		margin-bottom: 40px;
+		.egg-title{
+			span{
+				display: block;
+				font-weight: 700;
+				font-size: 94px;
+				line-height: 60px;
+			}
+		}
+	}
+
+	.egg-group-contact{
+		width: 100%;
+		float: left;
+
+		.egg-group-input{
+			width: 100%;
+			float: left;
+
+			input{
+				width: 100%;
+				float: left;
+				display: block;
+				border: 1px solid $color_gray;
+				background-color: $color_light;
+				padding: 15px;
+				margin-bottom: 15px;
+				font-size: 25px;
+				font-weight: 300;
+				color: $color_dark;
+
+				&:-webkit-placeholder,
+				&:-moz-placeholder,
+				&:-ms-placeholder,
+				&::placeholder{
+					color: $color_dark;
+				}
+			}
+		}
+
+		.egg-group-textarea{
+			width: 100%;
+			float: left;
+
+			textarea{
+				display: block;
+				width: 100%;
+				float: left;
+				border: 1px solid $color_gray;
+				background-color: $color_light;
+				padding: 15px;
+				margin-bottom: 15px;
+				font-size: 25px;
+				font-weight: 300;
+			}
+		}
+
+		.egg-group-submit{
+			width: 100%;
+			float: left;
+
+			input{
+				float: right;
+				font-size: 25px;
+				font-weight: 700;
+				padding: 10px 30px;
+				background-color: $color_dark;
+				color: $color_light;
+			}
+		}
+	}
+}

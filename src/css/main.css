@@ -4,6 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(scss/config/animate.css);
 @import url(sprite.css);
 html {
   font-family: sans-serif;
@@ -402,8 +403,16 @@ body {
   background-color: #E5E5E5; }
 
 #egg-nav {
-  background-color: black;
-  position: absolute;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.79+0,0.33+63,0+99 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.79) 0%, rgba(0, 0, 0, 0.33) 63%, transparent 99%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.79) 0%, rgba(0, 0, 0, 0.33) 63%, transparent 99%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.79) 0%, rgba(0, 0, 0, 0.33) 63%, transparent 99%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 99; }
@@ -469,18 +478,18 @@ body {
     width: 100%;
     float: left;
     margin-top: 30px; }
-    #egg-services .egg-container .egg-group-services ul {
+    #egg-services .egg-container .egg-group-services > ul {
       width: 100%;
       float: left; }
-      #egg-services .egg-container .egg-group-services ul li {
+      #egg-services .egg-container .egg-group-services > ul > li {
         position: relative;
         float: left;
-        margin-right: 56px; }
-        #egg-services .egg-container .egg-group-services ul li a {
+        margin-right: 65px; }
+        #egg-services .egg-container .egg-group-services > ul > li > a {
           display: block;
           overflow: hidden;
           text-indent: -999em; }
-        #egg-services .egg-container .egg-group-services ul li .egg-drop {
+        #egg-services .egg-container .egg-group-services > ul > li .egg-drop {
           width: 550px;
           float: left;
           padding: 30px;
@@ -488,6 +497,7 @@ body {
           position: absolute;
           left: 0;
           top: 135px;
+          z-index: 2;
           visibility: hidden;
           opacity: 0;
           -webkit-transition: 0.2s ease;
@@ -495,7 +505,7 @@ body {
           -ms-transition: 0.2s ease;
           -o-transition: 0.2s ease;
           transition: 0.2s ease; }
-          #egg-services .egg-container .egg-group-services ul li .egg-drop:after {
+          #egg-services .egg-container .egg-group-services > ul > li .egg-drop:after {
             content: '';
             width: 0;
             height: 0;
@@ -505,34 +515,46 @@ body {
             position: absolute;
             left: 28px;
             top: -20px; }
-          #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure {
+          #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure {
             width: 100%;
             float: left; }
-            #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure .egg-img {
+            #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure .egg-img {
               width: 29%;
               float: left;
               margin-right: 1%; }
-            #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure figcaption {
+            #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure figcaption {
               width: 70%;
               float: left; }
-              #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure figcaption .egg-describle h3 {
-                font-family: "Georgia", serif;
-                font-weight: 700;
-                font-size: 30px;
-                text-align: left;
-                display: block;
-                margin-bottom: 25px; }
-              #egg-services .egg-container .egg-group-services ul li .egg-drop .egg-group figure figcaption .egg-describle p {
-                text-align: left;
-                display: block;
-                font-size: 14px; }
-        #egg-services .egg-container .egg-group-services ul li:hover .egg-drop {
+              #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure figcaption .egg-describle {
+                width: 100%;
+                float: left;
+                padding-left: 30px; }
+                #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure figcaption .egg-describle h3 {
+                  font-family: "Georgia", serif;
+                  font-weight: 700;
+                  font-size: 30px;
+                  text-align: left;
+                  display: block;
+                  margin-bottom: 10px; }
+                #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure figcaption .egg-describle ul {
+                  width: 100%;
+                  float: left;
+                  list-style: initial; }
+                  #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure figcaption .egg-describle ul li {
+                    text-align: left;
+                    display: block;
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    list-style: initial; }
+                    #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure figcaption .egg-describle ul li span {
+                      display: none; }
+        #egg-services .egg-container .egg-group-services > ul > li:hover .egg-drop {
           visibility: visible;
           opacity: 1; }
-        #egg-services .egg-container .egg-group-services ul li:nth-child(4) .egg-drop, #egg-services .egg-container .egg-group-services ul li:nth-child(5) .egg-drop, #egg-services .egg-container .egg-group-services ul li:nth-child(6) .egg-drop {
+        #egg-services .egg-container .egg-group-services > ul > li:nth-child(4) .egg-drop, #egg-services .egg-container .egg-group-services > ul > li:nth-child(5) .egg-drop, #egg-services .egg-container .egg-group-services > ul > li:nth-child(6) .egg-drop {
           left: initial;
           right: 0; }
-          #egg-services .egg-container .egg-group-services ul li:nth-child(4) .egg-drop:after, #egg-services .egg-container .egg-group-services ul li:nth-child(5) .egg-drop:after, #egg-services .egg-container .egg-group-services ul li:nth-child(6) .egg-drop:after {
+          #egg-services .egg-container .egg-group-services > ul > li:nth-child(4) .egg-drop:after, #egg-services .egg-container .egg-group-services > ul > li:nth-child(5) .egg-drop:after, #egg-services .egg-container .egg-group-services > ul > li:nth-child(6) .egg-drop:after {
             left: initial;
             right: 28px; }
 
@@ -629,5 +651,79 @@ body {
       margin: -40px 0; }
     #egg-about .egg-right figure figcaption {
       display: none; }
+
+#egg-contact {
+  padding: 100px 0; }
+  #egg-contact .egg-group-title {
+    width: 100%;
+    float: left;
+    margin-bottom: 40px; }
+    #egg-contact .egg-group-title .egg-title span {
+      display: block;
+      font-weight: 700;
+      font-size: 94px;
+      line-height: 60px; }
+  #egg-contact .egg-group-contact {
+    width: 100%;
+    float: left; }
+    #egg-contact .egg-group-contact .egg-group-input {
+      width: 100%;
+      float: left; }
+      #egg-contact .egg-group-contact .egg-group-input input {
+        width: 100%;
+        float: left;
+        display: block;
+        border: 1px solid #E5E5E5;
+        background-color: #FFFFFF;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 25px;
+        font-weight: 300;
+        color: #000000; }
+        #egg-contact .egg-group-contact .egg-group-input input:-webkit-placeholder, #egg-contact .egg-group-contact .egg-group-input input:-moz-placeholder, #egg-contact .egg-group-contact .egg-group-input input:-ms-placeholder, #egg-contact .egg-group-contact .egg-group-input input::placeholder {
+          color: #000000; }
+    #egg-contact .egg-group-contact .egg-group-textarea {
+      width: 100%;
+      float: left; }
+      #egg-contact .egg-group-contact .egg-group-textarea textarea {
+        display: block;
+        width: 100%;
+        float: left;
+        border: 1px solid #E5E5E5;
+        background-color: #FFFFFF;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 25px;
+        font-weight: 300; }
+    #egg-contact .egg-group-contact .egg-group-submit {
+      width: 100%;
+      float: left; }
+      #egg-contact .egg-group-contact .egg-group-submit input {
+        float: right;
+        font-size: 25px;
+        font-weight: 700;
+        padding: 10px 30px;
+        background-color: #000000;
+        color: #FFFFFF; }
+
+#egg-footer {
+  padding: 25px 0; }
+  #egg-footer .egg-logo {
+    width: 65%;
+    float: left; }
+    #egg-footer .egg-logo h3 a {
+      overflow: hidden;
+      text-indent: -999em;
+      display: block; }
+  #egg-footer .egg-note {
+    width: 35%;
+    float: right; }
+    #egg-footer .egg-note span {
+      display: block;
+      font-size: 18px;
+      line-height: 22px; }
+      #egg-footer .egg-note span.egg-yellow {
+        font-family: "Georgia", serif;
+        font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */

@@ -17,7 +17,8 @@ module.exports = function(grunt) {
     uglify: {
 	    main: {
 		    files: {
-		    	'build/src/js/main.min.js': ['src/js/main.js']
+		    	'build/src/js/main.min.js': ['src/js/main.js'],
+		    	'build/src/js/wow.min.js': ['src/js/wow.js']
 		    }
 	    }
 	},

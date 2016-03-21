@@ -1,0 +1,30 @@
+#egg-footer{
+	padding: 25px 0;
+	.egg-logo{
+		width: 65%;
+		float: left;
+
+		h3{
+			a{
+				overflow: hidden;
+				text-indent: -999em;
+				display: block; 
+			}
+		}
+	}
+	.egg-note{
+		width: 35%;
+		float: right;
+
+		span{
+			display: block;
+			font-size: 18px;
+			line-height: 22px;
+
+			&.egg-yellow{
+				font-family: $fontHighlight;
+				font-weight: 700;
+			}
+		}
+	}
+}

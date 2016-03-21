@@ -9,9 +9,15 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
-.icon-logo-header {
+.icon-logo-footer {
   background-image: url(../img/sprite-crash.png);
   background-position: -106px -214px;
+  width: 153px;
+  height: 38px;
+}
+.icon-logo-header {
+  background-image: url(../img/sprite-crash.png);
+  background-position: -106px -252px;
   width: 52px;
   height: 52px;
 }
@@ -27,31 +33,31 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 107px;
   height: 107px;
 }
-.icon-service-midiaoff {
+.icon-service-audio {
   background-image: url(../img/sprite-crash.png);
   background-position: -107px 0px;
   width: 107px;
   height: 107px;
 }
-.icon-service-midiaon {
+.icon-service-midia {
   background-image: url(../img/sprite-crash.png);
   background-position: 0px -107px;
   width: 107px;
   height: 107px;
 }
-.icon-service-video {
+.icon-service-midiaon {
   background-image: url(../img/sprite-crash.png);
   background-position: -107px -107px;
   width: 107px;
   height: 107px;
 }
-.icon-service-web {
+.icon-service-video {
   background-image: url(../img/sprite-crash.png);
   background-position: -214px 0px;
   width: 107px;
   height: 107px;
 }
-.icon-service-youtube {
+.icon-service-web {
   background-image: url(../img/sprite-crash.png);
   background-position: -214px -107px;
   width: 107px;
