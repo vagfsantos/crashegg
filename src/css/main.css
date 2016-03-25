@@ -619,6 +619,56 @@ body {
         display: none; }
       #egg-porfolio .egg-group-portfolio ul li a:hover img {
         transform: translateY(-10px); }
+      #egg-porfolio .egg-group-portfolio ul li .egg-fixed {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9); }
+        #egg-porfolio .egg-group-portfolio ul li .egg-fixed.active {
+          display: table; }
+        #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up {
+          padding: 0 15%;
+          display: table-cell;
+          vertical-align: middle; }
+          #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-title {
+            width: 100%;
+            float: left;
+            margin-bottom: 20px;
+            text-align: center; }
+            #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-title h3 {
+              font-family: "Georgia", serif;
+              font-size: 30px; }
+          #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-describle {
+            width: 100%;
+            float: left;
+            margin-bottom: 20px; }
+            #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-describle p {
+              text-align: center;
+              font-size: 16px; }
+          #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-content {
+            width: 100%;
+            text-align: center; }
+            #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-content .egg-material {
+              display: inline-block; }
+        #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-close {
+          position: absolute;
+          right: 5%;
+          top: 5%;
+          font-size: 30px;
+          font-weight: 700;
+          cursor: pointer;
+          color: #FAC200;
+          -webkit-transition: 0.4s ease-in-out;
+          -moz-transition: 0.4s ease-in-out;
+          -ms-transition: 0.4s ease-in-out;
+          -o-transition: 0.4s ease-in-out;
+          transition: 0.4s ease-in-out; }
+          #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-close:hover {
+            color: #FFFFFF; }
 
 #egg-about {
   padding: 110px 0; }

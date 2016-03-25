@@ -14,7 +14,7 @@
 		}
 	}
 
-	.egg-group-portfolio{ 
+	.egg-group-portfolio{
 		width: 100%;
 		float: left;
 		margin-top: 30px;
@@ -44,6 +44,70 @@
 					&:hover{
 						img{
 							transform: translateY(-10px);
+						}
+					}
+				}
+
+				.egg-fixed{
+					position: fixed;
+					z-index: 100;
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					display: none;
+					background-color: rgba( $color_dark, .9);
+
+					&.active{
+						display: table;
+					}
+
+					.egg-pop-up{
+						padding: 0 15%;
+						display: table-cell;
+						vertical-align: middle;
+
+						.egg-title{
+							width: 100%;
+							float: left;
+							margin-bottom: 20px;
+							text-align: center;
+							h3{
+								font-family: $fontHighlight;
+								font-size: 30px;
+							}
+						}
+
+						.egg-describle{
+							width: 100%;
+							float: left;
+							margin-bottom: 20px;
+							p{
+								text-align: center;
+								font-size: 16px;
+							}
+						}
+
+						.egg-content{
+							width: 100%;
+							text-align: center;
+							.egg-material{
+								display: inline-block;
+							}
+						}
+					}
+					.egg-close{
+						position: absolute;
+						right: 5%;
+						top: 5%;
+						font-size: 30px;
+						font-weight: 700;
+						cursor: pointer;
+						color: $color_yellow;
+						@include animation(.4s, ease-in-out);
+
+						&:hover{
+							color: $color_light;
 						}
 					}
 				}
