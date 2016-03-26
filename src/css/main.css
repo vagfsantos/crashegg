@@ -455,6 +455,31 @@ body {
     margin-left: -1000px;
     left: 50%;
     position: relative; }
+  #egg-banner-main .bx-wrapper {
+    position: relative; }
+    #egg-banner-main .bx-wrapper .bx-controls-direction {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      z-index: 50; }
+      #egg-banner-main .bx-wrapper .bx-controls-direction a {
+        overflow: hidden;
+        text-indent: -999em;
+        margin: 0 5%;
+        -webkit-transition: 0.2s ease-in-out;
+        -moz-transition: 0.2s ease-in-out;
+        -ms-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out; }
+        #egg-banner-main .bx-wrapper .bx-controls-direction a.bx-prev {
+          float: left; }
+          #egg-banner-main .bx-wrapper .bx-controls-direction a.bx-prev:hover {
+            transform: translateX(-5px); }
+        #egg-banner-main .bx-wrapper .bx-controls-direction a.bx-next {
+          float: right; }
+          #egg-banner-main .bx-wrapper .bx-controls-direction a.bx-next:hover {
+            transform: translateX(5px); }
 
 #egg-services {
   padding: 60px 0; }
@@ -522,6 +547,9 @@ body {
               width: 29%;
               float: left;
               margin-right: 1%; }
+              #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure .egg-img img {
+                max-width: 100%;
+                border: 1px solid #FAC200; }
             #egg-services .egg-container .egg-group-services > ul > li .egg-drop .egg-group figure figcaption {
               width: 70%;
               float: left; }

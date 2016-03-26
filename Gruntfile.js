@@ -18,7 +18,8 @@ module.exports = function(grunt) {
 	    main: {
 		    files: {
 		    	'build/src/js/main.min.js': ['src/js/main.js'],
-		    	'build/src/js/wow.min.js': ['src/js/wow.js']
+		    	'build/src/js/wow.min.js': ['src/js/wow.js'],
+          'build/src/js/jquery.bxslider.min.js': ['src/js/jquery.bxslider.js']
 		    }
 	    }
 	},
@@ -47,12 +48,12 @@ module.exports = function(grunt) {
 	},
 
 	imagemin: {
-	    dynamic: {                         
+	    dynamic: {
 	      files: [{
-	        expand: true,                   
-	        cwd: 'build/src/img/',                  
-	        src: ['**/*.{png,jpg,gif}'],   
-	        dest: '/'                  
+	        expand: true,
+	        cwd: 'build/src/img/',
+	        src: ['**/*.{png,jpg,gif}'],
+	        dest: '/'
 	      }]
 	    }
 	},
@@ -98,7 +99,7 @@ module.exports = function(grunt) {
 			}
 		}
 	}
-    
+
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -112,7 +113,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  
+
   // Default task(s).
   grunt.registerTask('default', ['clean', 'copy', 'imagemin', 'sass', 'cssmin', 'uglify', 'useminPrepare', 'usemin']);
   grunt.registerTask('mk-sprite', 'sprite');

@@ -1,13 +1,47 @@
 #egg-banner-main{
 	overflow-x: hidden;
 
-	ul{ 
+	ul{
 		li{
 			a{
 				img{
 					margin-left: -1000px;
 					left: 50%;
 					position: relative;
+				}
+			}
+		}
+	}
+
+	.bx-wrapper{
+		position: relative;
+
+		.bx-controls-direction{
+			position: absolute;
+			top: 50%;
+			left:0;
+			right:0;
+			z-index: 50;
+
+			a{
+				overflow: hidden;
+				text-indent: -999em;
+				margin: 0 5%;
+				@include animation(.2s, ease-in-out);
+
+				&.bx-prev{
+					float: left;
+
+					&:hover{
+						transform: translateX(-5px);
+					}
+				}
+
+				&.bx-next{
+					float: right;
+					&:hover{
+						transform: translateX(5px);
+					}
 				}
 			}
 		}

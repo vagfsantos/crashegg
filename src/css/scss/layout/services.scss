@@ -4,7 +4,7 @@
 		.egg-group-title{
 			width: 100%;
 			float: left;
-			
+
 			.egg-title{
 				line-height: 76px;
 				margin-bottom: 20px;
@@ -28,7 +28,7 @@
 			width: 100%;
 			float: left;
 			margin-top: 30px;
-			
+
 			> ul{
 				width: 100%;
 				float: left;
@@ -37,13 +37,13 @@
 					position: relative;
 					float: left;
 					margin-right: 65px;
-					
+
 					> a{
 						display: block;
 						overflow: hidden;
-						text-indent: -999em;	
+						text-indent: -999em;
 					}
-					
+
 					.egg-drop{
 						width: 550px;
 						float: left;
@@ -70,7 +70,7 @@
 						}
 
 						.egg-group{
-							
+
 							figure{
 								width: 100%;
 								float: left;
@@ -79,6 +79,11 @@
 									width: 29%;
 									float: left;
 									margin-right: 1%;
+
+									img{
+										max-width: 100%;
+										border: 1px solid $color_yellow;
+									}
 								}
 
 								figcaption{
@@ -101,7 +106,7 @@
 											width: 100%;
 											float: left;
 											list-style: initial;
-											
+
 											li{
 												text-align: left;
 												display: block;
