@@ -630,12 +630,12 @@ body {
     width: 100%;
     float: left;
     margin-top: 30px; }
-    #egg-porfolio .egg-group-portfolio ul li {
+    #egg-porfolio .egg-group-portfolio > ul > li {
       width: 33.3%;
       float: left;
       padding-right: 5%;
       margin-top: 35px; }
-      #egg-porfolio .egg-group-portfolio ul li a figure .egg-img img {
+      #egg-porfolio .egg-group-portfolio > ul > li a figure .egg-img img {
         max-width: 100%;
         height: auto;
         -webkit-transition: 0.2s ease-in-out;
@@ -643,46 +643,74 @@ body {
         -ms-transition: 0.2s ease-in-out;
         -o-transition: 0.2s ease-in-out;
         transition: 0.2s ease-in-out; }
-      #egg-porfolio .egg-group-portfolio ul li a figure figcaption {
+      #egg-porfolio .egg-group-portfolio > ul > li a figure figcaption {
         display: none; }
-      #egg-porfolio .egg-group-portfolio ul li a:hover img {
+      #egg-porfolio .egg-group-portfolio > ul > li a:hover img {
         transform: translateY(-10px); }
-      #egg-porfolio .egg-group-portfolio ul li .egg-fixed {
+      #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed {
         position: fixed;
         z-index: 100;
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
         background-color: rgba(0, 0, 0, 0.9); }
-        #egg-porfolio .egg-group-portfolio ul li .egg-fixed.active {
-          display: table; }
-        #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up {
+        #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed.active {
+          display: inline-table;
+          visibility: visible;
+          opacity: 1; }
+        #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up {
           padding: 0 15%;
           display: table-cell;
           vertical-align: middle; }
-          #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-title {
+          #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-title {
             width: 100%;
             float: left;
             margin-bottom: 20px;
             text-align: center; }
-            #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-title h3 {
+            #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-title h3 {
               font-family: "Georgia", serif;
               font-size: 30px; }
-          #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-describle {
+          #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-describle {
             width: 100%;
             float: left;
             margin-bottom: 20px; }
-            #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-describle p {
+            #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-describle p {
               text-align: center;
               font-size: 16px; }
-          #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-content {
+          #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content {
             width: 100%;
             text-align: center; }
-            #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-pop-up .egg-content .egg-material {
-              display: inline-block; }
-        #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-close {
+            #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content .egg-material .egg-slider-portfolio li img {
+              height: 415px; }
+            #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content .egg-material .bx-wrapper {
+              position: relative; }
+              #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content .egg-material .bx-wrapper .bx-controls-direction {
+                position: absolute;
+                top: 59%;
+                left: 0;
+                right: 0;
+                z-index: 50; }
+                #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content .egg-material .bx-wrapper .bx-controls-direction a {
+                  overflow: hidden;
+                  text-indent: -999em;
+                  margin: 0 5%;
+                  -webkit-transition: 0.2s ease-in-out;
+                  -moz-transition: 0.2s ease-in-out;
+                  -ms-transition: 0.2s ease-in-out;
+                  -o-transition: 0.2s ease-in-out;
+                  transition: 0.2s ease-in-out; }
+                  #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content .egg-material .bx-wrapper .bx-controls-direction a.bx-prev {
+                    float: left; }
+                    #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content .egg-material .bx-wrapper .bx-controls-direction a.bx-prev:hover {
+                      transform: translateX(-5px); }
+                  #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content .egg-material .bx-wrapper .bx-controls-direction a.bx-next {
+                    float: right; }
+                    #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-pop-up .egg-content .egg-material .bx-wrapper .bx-controls-direction a.bx-next:hover {
+                      transform: translateX(5px); }
+        #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-close {
           position: absolute;
           right: 5%;
           top: 5%;
@@ -695,7 +723,7 @@ body {
           -ms-transition: 0.4s ease-in-out;
           -o-transition: 0.4s ease-in-out;
           transition: 0.4s ease-in-out; }
-          #egg-porfolio .egg-group-portfolio ul li .egg-fixed .egg-close:hover {
+          #egg-porfolio .egg-group-portfolio > ul > li .egg-fixed .egg-close:hover {
             color: #FFFFFF; }
 
 #egg-about {

@@ -19,8 +19,8 @@
 		float: left;
 		margin-top: 30px;
 
-		ul{
-			li{
+		> ul{
+			>li{
 				width: 33.3%;
 				float: left;
 				padding-right: 5%;
@@ -55,11 +55,14 @@
 					height: 100%;
 					left: 0;
 					top: 0;
-					display: none;
+					visibility: hidden;
+					opacity: 0;
 					background-color: rgba( $color_dark, .9);
 
 					&.active{
-						display: table;
+						display: inline-table;
+						visibility: visible;
+						opacity: 1;
 					}
 
 					.egg-pop-up{
@@ -92,7 +95,48 @@
 							width: 100%;
 							text-align: center;
 							.egg-material{
-								display: inline-block;
+								.egg-slider-portfolio{
+									li{
+										img{
+											height: 415px;
+										}
+									}
+								}
+
+								.bx-wrapper{
+									position: relative;
+
+									.bx-controls-direction{
+										position: absolute;
+										top: 59%;
+										left:0;
+										right:0;
+										z-index: 50;
+
+										a{
+											overflow: hidden;
+											text-indent: -999em;
+											margin: 0 5%;
+											@include animation(.2s, ease-in-out);
+
+											&.bx-prev{
+												float: left;
+
+												&:hover{
+													transform: translateX(-5px);
+												}
+											}
+
+											&.bx-next{
+												float: right;
+												&:hover{
+													transform: translateX(5px);
+												}
+											}
+										}
+									}
+								}
+
 							}
 						}
 					}

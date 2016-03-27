@@ -15,17 +15,24 @@ $(document).ready(function(){
 	// Pop up portfolio
 	(function togglePopUp(){
 		$('.egg-group-portfolio ul > li > a').on('click', function(){
-			$(this).parent().find('.egg-fixed').addClass('active').fadeIn(700);
+			$(this).parent().find('.egg-fixed').addClass('active');
 			return false;
 		});
 		$('.egg-close').on('click', function(){
-			$('.egg-fixed').fadeOut(700);
+			$('.egg-fixed').removeClass('active');
 		});
 	})();
 
 	// slider maain
 	(function makeSlider(){
 		$('#egg-banner-main ul').bxSlider({
+			'mode': 'fade',
+			'randomStart': true,
+			'pager': false,
+			'controls': true
+		});
+
+		$('.egg-slider-portfolio').bxSlider({
 			'mode': 'fade',
 			'randomStart': true,
 			'pager': false,
