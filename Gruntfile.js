@@ -115,7 +115,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean', 'copy', 'imagemin', 'sass', 'cssmin', 'uglify', 'useminPrepare', 'usemin']);
-  grunt.registerTask('mk-sprite', 'sprite');
+  grunt.registerTask('default', ['clean', 'copy', 'sass', 'cssmin', 'uglify', 'useminPrepare', 'usemin']);
+  grunt.registerTask('mk-sprite', 'sprite', 'imagemin');
 
 };

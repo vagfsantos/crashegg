@@ -43,6 +43,10 @@ $(document).ready(function(){
 		$('.bx-next').addClass('icon-arrow-right');
 	})();
 
+	(function removeLoad(){
+		$('#egg-load').hide();
+	})();
+
 	// calling wow.js
 	wow = new WOW({
 		boxClass:     'wow',      // default
