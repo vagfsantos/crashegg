@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).ready(function(){
 	// Scroll navigation
 	(function scrollMenu(){
 		$('nav.egg-menu ul li a').on('click', function(){
@@ -57,5 +57,34 @@ $(document).ready(function(){
    	});
 
    	wow.init();
+
+
+   	//Sending form
+   	$('.egg-group-contact form').on('submit', function(e){
+   		e.preventDefault();
+   		var path = $(this).attr('action');
+   		var data = $(this).serialize();
+   		$('.egg-group-contact').addClass('egg-active');
+ 
+   		$.ajax({ 
+   			'url': path,
+   			'method':'post',
+   			'data': data,
+
+   			'success': function(data){
+   				//console.log(data);
+   				$('.egg-group-contact').removeClass('egg-active');
+   				$('.egg-group-contact').addClass('egg-success');
+   			},
+
+   			'error': function(error){
+   				alert('Erro ao enviar seus dados, por favor tente novamente');
+   				console.log(error);
+   			}
+   		});
+
+   		return false;
+   	});
+
 
 });

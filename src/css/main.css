@@ -825,6 +825,36 @@ body {
         padding: 10px 30px;
         background-color: #000000;
         color: #FFFFFF; }
+    #egg-contact .egg-group-contact .egg-sending {
+      width: 100%;
+      float: left;
+      text-align: center;
+      margin-top: 40px;
+      display: none; }
+      #egg-contact .egg-group-contact .egg-sending img {
+        display: inline-block; }
+      #egg-contact .egg-group-contact .egg-sending p {
+        font-size: 18px; }
+    #egg-contact .egg-group-contact .egg-alert {
+      width: 100%;
+      float: left;
+      display: none;
+      margin-top: 40px; }
+      #egg-contact .egg-group-contact .egg-alert span {
+        display: block;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 500; }
+      #egg-contact .egg-group-contact .egg-alert p {
+        text-align: center; }
+    #egg-contact .egg-group-contact.egg-active form {
+      display: none; }
+    #egg-contact .egg-group-contact.egg-active .egg-sending {
+      display: block; }
+    #egg-contact .egg-group-contact.egg-success form {
+      display: none; }
+    #egg-contact .egg-group-contact.egg-success .egg-alert {
+      display: block; }
 
 #egg-footer {
   padding: 25px 0; }

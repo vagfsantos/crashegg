@@ -74,5 +74,58 @@
 				color: $color_light;
 			}
 		}
+
+		.egg-sending{
+			width: 100%;
+			float: left;
+			text-align: center;
+			margin-top: 40px;
+			display: none;
+
+			img{
+				display: inline-block;
+			}
+
+			p{
+				font-size: 18px;
+			}
+		}
+
+		.egg-alert{
+			width: 100%;
+			float: left;
+			display: none;
+			margin-top: 40px;
+
+			span{
+				display: block;
+			    font-size: 50px;
+			    text-align: center;
+			    font-weight: 500;
+			}
+
+			p{
+				text-align: center;
+			}
+		}
+
+		&.egg-active{
+			form{
+				display: none;
+			}
+			.egg-sending{
+				display: block;
+			}
+		}
+
+		&.egg-success{
+			form{
+				display: none;
+			}
+
+			.egg-alert{
+				display: block;
+			}
+		}
 	}
 }
